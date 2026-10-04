@@ -1,0 +1,9 @@
+#dashboard {
+  display: flex;
+  width: 1080px;
+  height: 100vh;
+  margin-top: 5px;
+  padding-left: 10px;
+  justify-content: space-between;
+
+}
