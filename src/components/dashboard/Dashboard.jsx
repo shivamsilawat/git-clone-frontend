@@ -32,7 +32,7 @@ const Dashboard = () => {
 
     const fetchSuggestedRepositories = async () => {
       try {
-        const response = await fetch(`http://13.60.193.86:3002:3002/AllRepos`);
+        const response = await fetch(`http://13.60.193.86:3002/AllRepos`);
         const data = await response.json();
         setSuggestedRepositories(data);
         console.log(suggestedRepositories);

@@ -21,7 +21,7 @@ const CreateRepo = () => {
             setLoading(true);
 
             const res = await axios.post(
-                "http://13.60.193.86:3002:3002/createRepo",
+                "http://13.60.193.86:3002/createRepo",
                 {
                     name: name,
                     description: description,
