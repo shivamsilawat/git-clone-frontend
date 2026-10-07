@@ -20,7 +20,7 @@ const Signup = () => {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://13.60.193.86:3002/signup", {
+      const res = await axios.post("https://git-clone-backend-rnmu.onrender.com/signup", {
         email: email,
         password: password,
         username: username,

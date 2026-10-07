@@ -20,7 +20,7 @@ const Profile = () => {
       if (userId) {
         try {
           const response = await axios.get(
-            `http://13.60.193.86:3002/profile/${userId}`
+            `https://git-clone-backend-rnmu.onrender.com/profile/${userId}`
           );console.log(response);
           setUserDetails(response.data);
         } catch (err) {

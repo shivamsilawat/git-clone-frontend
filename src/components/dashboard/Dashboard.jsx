@@ -15,7 +15,7 @@ const Dashboard = () => {
       try {
         const token = localStorage.getItem("token");
         const response = await fetch(
-          `http://13.60.193.86:3002:3002/currentUserRepo`,
+          `https://git-clone-backend-rnmu.onrender.com/currentUserRepo`,
           {
             headers: {
               Authorization: `Bearer ${token}`
@@ -32,7 +32,7 @@ const Dashboard = () => {
 
     const fetchSuggestedRepositories = async () => {
       try {
-        const response = await fetch(`http://13.60.193.86:3002/AllRepos`);
+        const response = await fetch(`https://git-clone-backend-rnmu.onrender.com/AllRepos`);
         const data = await response.json();
         setSuggestedRepositories(data);
         console.log(suggestedRepositories);
